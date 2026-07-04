@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* TITLE */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+/* SEARCH BOX */
+.search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    width: 250px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #0077ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background: #005ad1;
+}
+
+/* CITY TITLE */
+#cityTitle {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+/* WEATHER CARD */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 280px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* FORECAST GRID */
+#forecastBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* FORECAST CARD */
+.forecast-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 15px;
+    width: 140px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+}
+
+.forecast-card h4 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* ERROR */
+.error {
+    color: #ffdddd;
+    background: rgba(255,0,0,0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* LOADING */
+.loading {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+.favorites {
+    margin-top: 20px;
+}
+
+#favList {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.fav-item {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fav-item:hover {
+    background: rgba(255,255,255,0.4);
+}
